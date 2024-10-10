@@ -1,5 +1,6 @@
 package com.java.caldeira.aula09.exercicio25;
 
+import aula08.exercicio25.CaldeiraException;
 import aula08.exercicio25.Operacoes;
 import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
@@ -34,7 +35,7 @@ public class OperacoesTests {
 
     @Test
     void verificaDivisaoDeDoisNumerosComSegundoNumeroSendoZero(){
-        Double resutado = operacoes.divisaoDeDoisNumeros(5.0, 0.0);
-        Assertions.assertEquals(null, resutado);
+        Assertions.assertThrows(CaldeiraException.class, () -> operacoes.divisaoDeDoisNumeros(5.0, 2.0));
     }
 }
+
