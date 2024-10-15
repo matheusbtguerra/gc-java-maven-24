@@ -1,4 +1,4 @@
-package aula08.exercicio25;
+package aula09.exercicio25;
 
 public class Operacoes {
     public Double somaDeDoisNumeros(Double num1, Double num2) {
